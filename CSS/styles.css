@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.header{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-nav{
+    width: 50%;
+    min-width: 400px;
+}
+
+.menu ul{
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color:black;
+    text-transform: capitalize;
+}
+
+.item_menu:hover{
+    color: cyan;
+}
+
+.button_cv{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* Estilos del logo */
+.container_logo{
+    width: 120px;
+    background-color: gray;
+}
+.container_logo img{
+    width: 100%;
+}
