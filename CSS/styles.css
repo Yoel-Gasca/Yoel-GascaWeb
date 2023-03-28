@@ -109,7 +109,7 @@ body{
 
 .img_effect{
     width: 250px;
-    height: 250px;
+    height: 290px;
     position: relative;
 }
 
@@ -133,7 +133,7 @@ body{
     border: 2px solid cyan;
     border-radius: 5px;
     position: absolute;
-    left: 10px;
+    left: 5px;
     top: 10px;
     z-index: -1;
     transition: .3s ease;
@@ -163,7 +163,26 @@ body{
 .text_section ul a{
     text-decoration: none;
 }
-.text_section ul li::before{
+#acercaDe .text_section ul li::before{
+    content: ">";
+    color: cyan;
+    margin-left: 3px;
+}
+
+/* Secction Servicios */
+#servicios{
+    padding: 150px 0px;
+}
+
+#servicios .container_description_section{
+    grid-template-columns: 1fr;
+}
+
+#servicios .text_section{
+    grid-template-columns: 1fr;
+}
+
+#servicios .text_section p::before{
     content: ">";
     color: cyan;
     margin-left: 3px;
@@ -175,3 +194,5 @@ body{
 .container_logo img{
     width: 100%;
 }
+
+/*Seccion protafolio */
