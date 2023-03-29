@@ -196,3 +196,79 @@ body{
 }
 
 /*Seccion protafolio */
+#portafolio{
+    padding: 100px 0;
+}
+
+.container_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img_proyect1{
+    width: 680px;
+    height: 220px;
+}
+
+.img_proyect1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 5px;
+}
+
+.description_proyect{
+    text-align: justify;
+}
+
+.text_proyect{
+    letter-spacing: 0.1em;
+}
+
+.name_proyect{
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.info_proyect{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.programing_languages ul{
+    list-style: none;
+    display: flex;
+}
+.programing_languages ul li{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    margin: 0px 5px;
+}
+
+.links_proyect ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin: 5px 0;
+}
+
+.links_proyect ul li{
+    margin: 0px 5px;
+}
+
+.links_proyect ul li:hover a{
+    color: cyan;
+}
+
+.links_proyect ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.description_proyect{
+    position: relative;
+    left: -20px;
+}
