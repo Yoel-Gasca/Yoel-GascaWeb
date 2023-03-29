@@ -216,6 +216,7 @@ body{
     object-fit: cover;
     object-position: center center;
     border-radius: 5px;
+    transition: .3s;
 }
 
 .description_proyect{
@@ -240,6 +241,7 @@ body{
 .programing_languages ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 .programing_languages ul li{
     text-transform: uppercase;
@@ -271,4 +273,20 @@ body{
 .description_proyect{
     position: relative;
     left: -20px;
+}
+
+/*boton ver mas */
+.button_repos{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.ver_mas ul li{
+    list-style: none;
+    text-align: center;
+}
+
+.ver_mas ul li a{
+    text-decoration: none;
 }
