@@ -22,6 +22,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(43, 66, 77);
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .container-nav{
@@ -39,7 +43,7 @@ body{
 
 .menu ul li a{
     text-decoration: none;
-    color:black;
+    color: white;
     text-transform: capitalize;
 }
 
@@ -182,6 +186,10 @@ body{
     grid-template-columns: 1fr;
 }
 
+#servicios .text_section p{
+    display: flex;
+}
+
 #servicios .text_section p::before{
     content: ">";
     color: cyan;
@@ -290,4 +298,62 @@ body{
 .ver_mas ul li a{
     text-decoration: none;
     transition: .3s ease;
+    color: black;
+}
+
+/* Section CONTACTO */
+#contacto{
+    padding: 150px;
+    text-align: center;
+}
+
+#contacto .text_section::after{
+    display: none;
+}
+
+#contacto .container_description_section{
+    grid-template-columns: 1fr;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Estilos de footer */
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellow;
+}
+
+.links_footter{
+    padding: 10px 0;
+}
+
+.items_links{
+    list-style: none;
+    display: flex;
+}
+
+.items_links li{
+    margin: 0px 10px;
+}
+
+.items_links li a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+.items_links li a svg:hover::after{
+    left: 5px;
+    top: 5px;
+}
+
+.items_links li a svg{
+    width: 25px;
+    height: 25px;
+}
+
+.text_footer{
+    padding: 15px 0;
 }
