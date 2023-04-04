@@ -7,6 +7,15 @@
     box-sizing: border-box;
 }
 
+:root{
+    --color1--: cyan;
+    --color2--: #2b424d;
+    --color3--: black;
+    --textcolor1--: white;
+    --textcolor2--: #dbdfe9;
+    --borderadius1--: 5px;
+}
+
 html{
     font-size: 16px;
     font-family: 'Chakra Petch', sans-serif;
@@ -14,6 +23,9 @@ html{
 
 body{
     min-height: 100vh;
+    counter-reset: item;
+    counter-reset: section;
+    background-color: #1c1a32;
 }
 
 .header{
@@ -22,7 +34,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(43, 66, 77);
+    background-color: #2b424d;
     position: fixed;
     top: 0;
     left: 0;
@@ -44,7 +56,6 @@ body{
 .menu ul li a{
     text-decoration: none;
     color: white;
-    text-transform: capitalize;
 }
 
 .item_menu:hover{
@@ -83,22 +94,34 @@ body{
 
 .greeting_profile{
     color: cyan;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
 .name_profile{
-    font-size: 3.7rem;
+    font-size: 4.5rem;
     margin: 10px 0px 20px 0px;
+    color: white;
 }
 
 .descripcion_pers{
     width: 90%;
+    font-size: 1.1rem;
+    color: var(--textcolor2--);
 }
- 
+
+.container_section{
+    font-size: 1.1rem;
+}
+
 /* Seccion Acerca de */
 #acercaDe{
     padding: 100px 0px;
+}
+
+.container_title_section{
+    padding-bottom: 15px;
+    color: white;
 }
 
 .text-title-section{
@@ -109,6 +132,7 @@ body{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
+    color: var(--textcolor2--);
 }
 
 .img_effect{
@@ -164,13 +188,19 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 .text_section ul a{
     text-decoration: none;
 }
+
 #acercaDe .text_section ul li::before{
     content: ">";
     color: cyan;
     margin-left: 3px;
+}
+
+.text_section ul li a{
+    color: var(--textcolor2--);
 }
 
 /* Secction Servicios */
@@ -239,17 +269,20 @@ body{
     text-transform: uppercase;
     margin-top: 5px;
     margin-bottom: 10px;
+    color: white;
 }
 
 .info_proyect{
     padding: 10px;
     margin-bottom: 10px;
+    color: var(--textcolor2--);
 }
 
 .programing_languages ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    color: var(--textcolor2--);
 }
 .programing_languages ul li{
     text-transform: uppercase;
@@ -266,7 +299,7 @@ body{
 }
 
 .links_proyect ul li{
-    margin: 0px 5px;
+    margin: 5px;
 }
 
 .links_proyect ul li:hover a{
@@ -274,7 +307,7 @@ body{
 }
 
 .links_proyect ul li a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -286,7 +319,7 @@ body{
 /*boton ver mas */
 .button_repos{
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 5px;
 }
 
@@ -298,7 +331,7 @@ body{
 .ver_mas ul li a{
     text-decoration: none;
     transition: .3s ease;
-    color: black;
+    color: var(--textcolor2--);
 }
 
 /* Section CONTACTO */
@@ -323,7 +356,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: yellow;
+    background-color: #fcdb00;
 }
 
 .links_footter{
@@ -370,12 +403,12 @@ body{
     width: 2px;
     height: 100px;
     display: block;
-    background-color: cyan;
+    background-color: #646f75;
     margin: 0 auto;
 }
 
 .lateral a{
-    color: black;
+    color: #646f75 ;
     text-decoration: none;
     transition: .3s ease;
 }
@@ -407,4 +440,12 @@ body{
     margin-bottom: 15px;
     writing-mode: vertical-lr;
     letter-spacing: .1rem;
+}
+.email{
+    font-size: 1.1rem;
+    transition: .3s ease;
+}
+
+.email:hover{
+    transform: translateY(-5px);
 }
