@@ -27,10 +27,22 @@ body{
     counter-reset: section;
     background-color: #1c1a32;
 }
+body::-webkit-scrollbar{
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #2b424d;
+    border-radius: 5px;
+}
 
 .header{
     width: 100%;
-    padding: 10px 20px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,11 +50,14 @@ body{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
+    backdrop-filter: blur(10px);
 }
 
 .container-nav{
     width: 50%;
     min-width: 400px;
+    max-width: 700px;
 }
 
 .menu ul{
@@ -99,9 +114,12 @@ body{
 }
 
 .name_profile{
-    font-size: 4.5rem;
     margin: 10px 0px 20px 0px;
     color: white;
+}
+
+.name_profile h1{
+    font-size: clamp(40px, 8vw, 100px);
 }
 
 .descripcion_pers{
@@ -228,6 +246,8 @@ body{
 /* Estilos del logo */
 .container_logo{
     width: 100px;
+    min-width: 50px;
+    z-index: 1;
 }
 .container_logo img{
     width: 100%;
@@ -240,12 +260,14 @@ body{
 
 .container_cards{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr)
 }
 
 .img_proyect1{
-    width: 680px;
-    height: 220px;
+    width: 100vw;
+    height: 330px;
+    max-width: 680px;
+    max-height: 220px;
 }
 
 .img_proyect1 img{
@@ -276,6 +298,8 @@ body{
     padding: 10px;
     margin-bottom: 10px;
     color: var(--textcolor2--);
+    border-radius: 5px;
+    font-size: .95rem;
 }
 
 .programing_languages ul{
