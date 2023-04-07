@@ -36,7 +36,7 @@ body::-webkit-scrollbar-track{
 }
 
 body::-webkit-scrollbar-thumb{
-    background-color: #2b424d;
+    background-color: #646f75;
     border-radius: 5px;
 }
 
@@ -52,6 +52,7 @@ body::-webkit-scrollbar-thumb{
     left: 0;
     z-index: 1;
     backdrop-filter: blur(10px);
+    transition: .4s linear;
 }
 
 .container-nav{
@@ -71,6 +72,32 @@ body::-webkit-scrollbar-thumb{
 .menu ul li a{
     text-decoration: none;
     color: white;
+}
+
+/*Button responsive*/
+.menu_responsive{
+    display: none;
+}
+
+.button_menu{
+    background: none;
+    border: none;
+    color: #dbdfe9;
+    position: relative;
+    cursor: pointer;
+}
+
+.active_header{
+    transform: translateY(0%);
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.75);
+}
+
+.desactive_header{
+    transform: translateY(-110%);
+}
+
+.ocultar_shadow{
+    box-shadow: none;
 }
 
 .item_menu:hover{
@@ -379,8 +406,10 @@ body::-webkit-scrollbar-thumb{
     width: 100%;
     display: flex;
     align-items: center;
+    position: relative;
     flex-direction: column;
     background-color: #fcdb00;
+    z-index: 1;
 }
 
 .links_footter{

@@ -25,6 +25,10 @@
     }
 
     /*header*/
+    .header{
+        backdrop-filter: none;
+    }
+
     .container-nav{
         width: 100%;
         min-width: 200px;
@@ -33,7 +37,14 @@
         right: 0;
         top: 0;
         backdrop-filter: blur(10px);
+        transform: translateX(100%);
+        transition: .3s linear;
     }
+
+    .active_button_menu{
+        transform: translateX(0%);
+    }
+
     .menu ul{
         width: 50%;
         height: 100vh;
@@ -42,16 +53,19 @@
         margin-left: auto;
         background-color: #2b424d;
     }
+
     .menu ul li{
         margin: 25px 0px;
     }
+
     .item_menu::before{
         display: block;
         text-align: center;
         margin-right: 0;
         margin-bottom: 3px;
     }
-    .button_menu{
+
+    .menu_responsive{
         display: block;
     }
 }
