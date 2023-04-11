@@ -4,6 +4,8 @@ const containerNav = document.querySelector(".container-nav");
 
 let posActual = 0;
 //Eventos
+
+// Funcion para mostrar y ocultar el menu de navegacion
 botonMenu.addEventListener("click", function(){
     containerNav.classList.toggle("active_button_menu");
     if(status_button){

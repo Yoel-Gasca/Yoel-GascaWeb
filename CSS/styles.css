@@ -374,6 +374,11 @@ body::-webkit-scrollbar-thumb{
     border-radius: 5px;
 }
 
+.button_repos:hover{
+    color: cyan;
+    border: 1px solid cyan;
+}
+
 .ver_mas ul li{
     list-style: none;
     text-align: center;
@@ -444,7 +449,7 @@ body::-webkit-scrollbar-thumb{
     padding: 15px 0;
 }
 
-/* Estilos de layterales */
+/* Estilos de laterales */
 .lateral{
     padding: 0px 20px;
     position: fixed;
@@ -460,12 +465,12 @@ body::-webkit-scrollbar-thumb{
     margin: 0 auto;
 }
 
-.lateral a{
+.lateral svg{
     color: #646f75 ;
     text-decoration: none;
     transition: .3s ease;
 }
-.lateral a:hover{
+.lateral svg:hover{
     color: cyan;
 }
 
@@ -491,8 +496,13 @@ body::-webkit-scrollbar-thumb{
 
 .der a{
     margin-bottom: 15px;
+    text-decoration: none;
+    color: #646f75;
     writing-mode: vertical-lr;
     letter-spacing: .1rem;
+}
+.der a:hover{
+    color: cyan;
 }
 .email{
     font-size: 1.1rem;
