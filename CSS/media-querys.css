@@ -68,6 +68,9 @@
     .menu_responsive{
         display: block;
     }
+    .Services-List img{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -83,12 +86,20 @@
     .description_proyect{
         margin-top: 10px;
     }
+
+    .Services-List img{
+        width: 600px;
+        height: 200px;
+    }
 }
 @media screen and (max-width: 560px){
     .container_cards{
         grid-template-columns: 1fr;
     }
     .menu ul{
+        width: 100%;
+    }
+    .Services-List img{
         width: 100%;
     }
 }

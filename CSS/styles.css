@@ -257,18 +257,19 @@ body::-webkit-scrollbar-thumb{
     grid-template-columns: 1fr;
 }
 
-#servicios .text_section{
+#servicios .text_services{
     grid-template-columns: 1fr;
 }
 
-#servicios .text_section p{
+#servicios .text_services p{
     display: flex;
 }
 
-#servicios .text_services p::before{
+#servicios .Services-List p::before{
     content: ">";
     color: cyan;
     margin-left: 3px;
+    display: flex;
 }
 
 .Services-List img{
