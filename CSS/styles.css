@@ -265,11 +265,21 @@ body::-webkit-scrollbar-thumb{
     display: flex;
 }
 
-#servicios .text_section p::before{
+#servicios .text_services p::before{
     content: ">";
     color: cyan;
     margin-left: 3px;
 }
+
+.Services-List img{
+    width: 654px;
+    height: 364px;
+    object-position: center center;
+}
+.Services-List li{
+    list-style: none;
+}
+
 /* Estilos del logo */
 .container_logo{
     width: 100px;
