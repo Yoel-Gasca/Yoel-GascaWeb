@@ -239,7 +239,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 #acercaDe .text_section ul li::before{
-    content: ">";
+    content: "▹";
     color: cyan;
     margin-left: 3px;
 }
@@ -266,7 +266,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 #servicios .Services-List p::before{
-    content: ">";
+    content: "▹";
     color: cyan;
     margin-left: 3px;
     display: flex;
