@@ -4,6 +4,9 @@
 
 Este es mi Portafolio web personal: <a href="https://yoel-gasca.github.io/Yoel-GascaWeb/">Ir al sitio</a>
 
+![image](https://user-images.githubusercontent.com/83617933/234101535-390a63b0-c2b0-4b5b-97bf-ac0056eca044.png)
+
+
 ## Contact
 <h3>Connect with me:</h3>
 <p align="left">
