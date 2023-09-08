@@ -74,6 +74,11 @@ body::-webkit-scrollbar-thumb{
     color: white;
 }
 
+.button_cv{
+    color: #ffff;
+    text-decoration: none;
+}
+
 /*Button responsive*/
 .menu_responsive{
     display: none;
@@ -106,7 +111,7 @@ body::-webkit-scrollbar-thumb{
 
 .button_cv{
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid #ffff;
     border-radius: 5px;
 }
 
